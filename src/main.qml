@@ -1,8 +1,7 @@
-import QtQuick 2.2
-import QtQuick.Controls 1.1
-import QtWebEngine 1.5
-import QtQuick.Layouts 1.1
-import QtQuick.Controls.Styles 1.2
+import QtQuick
+import QtQuick.Controls
+import QtWebEngine
+import QtQuick.Layouts
 
 ApplicationWindow {
     visible: true

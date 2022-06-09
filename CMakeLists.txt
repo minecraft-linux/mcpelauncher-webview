@@ -14,10 +14,10 @@ if(CMAKE_VERSION VERSION_LESS "3.7.0")
 endif()
 
 
-find_package(Qt5 COMPONENTS Core Widgets WebEngineWidgets Qml REQUIRED)
+find_package(Qt6 COMPONENTS Core Widgets WebEngineWidgets Qml REQUIRED)
 
 add_executable(mcpelauncher-webview src/main.cpp src/qml.qrc src/main.h)
-target_link_libraries(mcpelauncher-webview Qt5::Core Qt5::Widgets Qt5::WebEngineWidgets Qt5::Qml)
+target_link_libraries(mcpelauncher-webview Qt6::Core Qt6::Widgets Qt6::WebEngineWidgets Qt6::Qml)
 
 if (QT_RPATH AND NOT QT_RPATH STREQUAL "")
     set_target_properties(mcpelauncher-webview PROPERTIES INSTALL_RPATH ${QT_RPATH})
